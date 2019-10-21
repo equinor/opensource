@@ -1,1 +1,1 @@
-# opensource
+# Open Source @ Equinor
