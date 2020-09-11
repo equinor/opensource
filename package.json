@@ -6,7 +6,7 @@
     "build": "eleventy --input src",
     "docker:build": "docker build -t equinor/oss-web .",
     "docker:start": "docker run -p 8080:80 equinor/oss-web",
-    "docker:inspect": "docker run -it -p 8080:8080 equinor/oss-web /bin/sh"
+    "docker:inspect": "docker run -it equinor/oss-web /bin/sh"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
