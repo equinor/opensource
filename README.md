@@ -9,4 +9,4 @@ $ npm run dev
 
 ## Radix
 
-The app should be available in Radix at https://opensource.app.radix.equinor.com
+The app is running at https://web-opensource-dev.playground.radix.equinor.com/
