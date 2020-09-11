@@ -1,0 +1,15 @@
+{
+  "name": "opensource.equinor.com",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "eleventy --input src --serve",
+    "build": "eleventy --input src",
+    "docker:build": "docker build -t equinor/oss-web .",
+    "docker:start": "docker run -p 8080:80 equinor/oss-web",
+    "docker:inspect": "docker run -it -p 8080:8080 equinor/oss-web /bin/sh"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "prettier": "^2.1.1"
+  }
+}
