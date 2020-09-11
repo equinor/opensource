@@ -1,0 +1,19 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: opensource
+spec:
+  environments:
+    - name: dev
+      build:
+        from: master
+  components:
+    - name: web
+      dockerfileName: Dockerfile
+      publicPort: http
+      ports:
+        - name: http
+          port: 80
+  dnsAppAlias:
+    environment: dev
+    component: web
