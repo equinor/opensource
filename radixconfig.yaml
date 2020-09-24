@@ -7,6 +7,7 @@ spec:
     - name: dev
       build:
         from: master
+    - name: prod
   components:
     - name: web
       publicPort: http
@@ -14,5 +15,5 @@ spec:
         - name: http
           port: 80
   dnsAppAlias:
-    environment: dev
+    environment: prod
     component: web
