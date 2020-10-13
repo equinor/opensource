@@ -4,6 +4,7 @@ module.exports = (data) => `<!doctype html>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${data.title}</title>
+    <link rel="manifest" href="/manifest.json" />
     <style>
       :root {
         --slate-blue: #243746;
@@ -22,6 +23,16 @@ module.exports = (data) => `<!doctype html>
       }
     </style>
     <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-medium.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then(function() {
+              console.log("ServiceWorker has been registered!");
+            })
+            .catch(console.error);
+      }
+    </script>
   </head>
   <body>
   ${data.content}
