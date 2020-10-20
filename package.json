@@ -12,5 +12,8 @@
     "@11ty/eleventy": "^0.11.0",
     "eleventy-plugin-pwa": "^1.0.8",
     "prettier": "^2.1.1"
+  },
+  "dependencies": {
+    "object-path": ">=0.11.5"
   }
 }
