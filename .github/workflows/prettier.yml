@@ -2,6 +2,7 @@ name: Format code
 
 on:
 - pull_request
+- workflow_dispatch
 
 jobs:
   prettier:
