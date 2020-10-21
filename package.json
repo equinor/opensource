@@ -2,7 +2,7 @@
   "name": "opensource.equinor.com",
   "version": "1.0.0",
   "scripts": {
-    "dev": "eleventy --input src --serve",
+    "dev": "eleventy --config=src/config.js --input src --serve",
     "build": "eleventy --input src",
     "docker:build": "docker build -t equinor/oss-web .",
     "docker:start": "docker run -p 8080:80 equinor/oss-web",
@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "prettier": "^2.1.2"
+    "eleventy-plugin-pwa": "^1.0.8",
+    "prettier": "^2.1.1"
   },
   "dependencies": {
     "object-path": ">=0.11.5"
