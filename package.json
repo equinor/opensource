@@ -2,7 +2,7 @@
   "name": "opensource.equinor.com",
   "version": "1.0.0",
   "scripts": {
-    "dev": "eleventy --config=src/config.js --input src --serve",
+    "dev": "eleventy --input src --serve",
     "debug": "DEBUG=Eleventy* npm run dev",
     "build": "eleventy --input src",
     "build:css": "postcss src/styles/tailwind.css -o _tmp/styles.css --watch",
