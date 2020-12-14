@@ -1,0 +1,10 @@
+.topbar {
+  background: #fff;
+  min-height: 4rem;
+  display: grid;
+  align-items: center;
+
+  & > * {
+    font-size: 1rem;
+  }
+}

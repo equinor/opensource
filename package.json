@@ -2,10 +2,13 @@
   "name": "opensource.equinor.com",
   "version": "1.0.0",
   "scripts": {
-    "dev": "eleventy --input src --serve",
+    "clean": "rimraf dist",
+    "predev": "npm run clean",
+    "dev": "eleventy --serve",
     "debug": "DEBUG=Eleventy* npm run dev",
-    "build": "eleventy --input src",
-    "build:css": "postcss src/styles/tailwind.css -o _tmp/styles.css --watch",
+    "prebuild": "npm run clean",
+    "build": "eleventy",
+    "build:css": "postcss src/styles/tailwind.css -o _tmp/styles.css",
     "build:css:watch": "npm run build:css -- --watch",
     "docker:build": "docker build -t equinor/oss-web .",
     "docker:start": "docker run -p 8080:80 equinor/oss-web",
@@ -18,11 +21,13 @@
     "eleventy-plugin-pwa": "^1.0.8",
     "js-yaml": "^3.14.1",
     "object-path": ">=0.11.5",
-    "postcss": "^7.0.35",
+    "postcss": "^8.2.1",
     "postcss-cli": "^8.3.0",
+    "postcss-import": "^13.0.0",
+    "postcss-nested": "^5.0.3",
     "prettier": "^2.1.1",
+    "rimraf": "^3.0.2",
     "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+    "stylelint-config-standard": "^20.0.0"
   }
 }

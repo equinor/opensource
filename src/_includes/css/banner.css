@@ -1,0 +1,35 @@
+.banner {
+  --maxWidth: 40em;
+  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem);
+
+  padding-left: var(--paddingX);
+  padding-right: var(--paddingX);
+  padding-top: 30%;
+
+  @media (min-width: 591px) {
+    padding-top: 177.297px;
+  }
+
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  article {
+    padding: 7% 10%;
+    background: #fff;
+    box-shadow: 0 0 20px #0004;
+
+    & > * + * {
+      margin-top: 1.5em;
+    }
+  }
+}

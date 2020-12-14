@@ -13,5 +13,5 @@ RUN npm run build
 
 FROM nginx:1.15.8-alpine
 WORKDIR /app
-COPY --from=builder /opt/app/_site /app
+COPY --from=builder /opt/app/dist /app
 COPY nginx.conf /etc/nginx/conf.d/default.conf

@@ -1,0 +1,17 @@
+body {
+  --maxWidth: 1366px;
+  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem);
+
+  font-family: var(--fontFamily);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+body > div:first-of-type,
+body > footer,
+.content > * {
+  padding-left: var(--paddingX);
+  padding-right: var(--paddingX);
+}
