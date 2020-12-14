@@ -20,8 +20,6 @@
     "object-path": ">=0.11.5",
     "postcss": "^7.0.35",
     "postcss-cli": "^8.3.0",
-    "preact": "^10.5.7",
-    "preact-render-to-string": "^5.1.12",
     "prettier": "^2.1.1",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
