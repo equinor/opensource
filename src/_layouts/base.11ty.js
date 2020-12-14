@@ -1,28 +1,12 @@
 module.exports = (data) => `<!doctype html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${data.title}</title>
+    <title>${data.site.name}</title>
     <link rel="manifest" href="/manifest.json" />
-    <style>
-      :root {
-        --slate-blue: #243746;
-        --mist-blue: #D5EAF4;
-      }
-      html, body {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        display: grid;
-        place-items: center;
-        font: 500 2rem Equinor;
-        background: var(--slate-blue);
-        color: var(--mist-blue);
-      }
-    </style>
     <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-medium.css" />
+    <link rel="stylesheet" href="/styles.css">
     <script>
       if ("serviceWorker" in navigator) {
           navigator.serviceWorker
@@ -34,7 +18,7 @@ module.exports = (data) => `<!doctype html>
       }
     </script>
   </head>
-  <body>
+  <body class="text-mist-blue-100 bg-slate-blue-100 grid place-items-center font-sans text-4xl font-medium h-full">
   ${data.content}
   </body>
 </html>
