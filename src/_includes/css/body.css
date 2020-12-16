@@ -1,17 +1,31 @@
 body {
-  --maxWidth: 1366px;
-  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem);
-
+  /*   --maxWidth: 1366px;
+  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem); */
   font-family: var(--fontFamily);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100%;
   line-height: 1.5;
+  font-size: var(--default-fontSize);
+  color: var(--darkGrey);
+
+  a {
+    color: var(--linkColor);
+    text-decoration: none;
+    border-bottom: 1px solid var(--linkColor);
+  }
 }
 
-body > div:first-of-type,
-body > footer,
+/* body > header,
+body > footer, */
+
+/* body > header,
+body > footer {
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
+} */
+
 .content > * {
-  padding-left: var(--paddingX);
-  padding-right: var(--paddingX);
+  padding-left: var(--page-paddingX);
+  padding-right: var(--page-paddingX);
 }

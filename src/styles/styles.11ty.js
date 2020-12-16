@@ -4,6 +4,7 @@ const postcss = require('postcss')
 const autoprefixer = require('autoprefixer')
 const atImport = require('postcss-import')
 const nested = require('postcss-nested')
+const customMedia = require('postcss-custom-media')
 
 const fileName = 'styles.css'
 
@@ -19,7 +20,7 @@ exports.data = () => {
 }
 
 exports.render = async ({ css, filePath }) =>
-  await postcss([atImport, nested, autoprefixer])
+  await postcss([atImport, customMedia, nested, autoprefixer])
     .process(css, {
       from: filePath,
     })

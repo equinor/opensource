@@ -6,20 +6,16 @@ module.exports = (data) => `<!doctype html>
     <title>${data.site.name}</title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-medium.css" />
-    <link rel="stylesheet" href="/styles.css">
-    <script>
-      if ("serviceWorker" in navigator) {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then(function() {
-              console.log("ServiceWorker has been registered!");
-            })
-            .catch(console.error);
-      }
-    </script>
+    <link rel="stylesheet" href="/css/styles.css">
   </head>
-  <body class="text-mist-blue-100 bg-slate-blue-100 grid place-items-center font-sans text-4xl font-medium h-full">
+  <body>
+  <header>
+    Open source @ Equinor
+  </header>
+  <div class="content">
   ${data.content}
+  </div>
+  <footer>Some footer</footer>
   </body>
 </html>
 `

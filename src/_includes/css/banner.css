@@ -1,20 +1,23 @@
 .banner {
-  --maxWidth: 40em;
-  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem);
+  /*   --maxWidth: 40em;
+  --paddingX: max(calc((100% - var(--maxWidth)) / 2), 2rem); */
 
-  padding-left: var(--paddingX);
+  /*   padding-left: var(--paddingX);
   padding-right: var(--paddingX);
   padding-top: 30%;
 
   @media (min-width: 591px) {
     padding-top: 177.297px;
-  }
+  } */
 
+  /*   padding-left: var(--banner-textBoxPaddingX);
+  padding-right: var(--banner-textBoxPaddingX); */
   position: relative;
+  padding-top: 16em;
 
   img {
     width: 100%;
-    height: 300px;
+    height: calc(var(--typeScale-1) * 20);
     object-fit: cover;
     object-position: 50% 60%;
     position: absolute;
@@ -24,12 +27,22 @@
   }
 
   article {
-    padding: 7% 10%;
+    font-size: var(--typeScale-2);
+    /*     font-size: 1.1vw; */
+    max-width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: min(2em, 7%) min(3em, 10%);
+    /*     padding: 7% 10%; */
     background: #fff;
     box-shadow: 0 0 20px #0004;
 
     & > * + * {
       margin-top: 1.5em;
+    }
+
+    p:last-child {
+      font-size: var(--typeScale-1);
     }
   }
 }

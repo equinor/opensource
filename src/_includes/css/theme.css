@@ -1,4 +1,57 @@
+@custom-media --small (min-width: 48rem);
+@custom-media --medium (min-width: 64rem);
+@custom-media --large (min-width: 85.375rem);
+@custom-media --xLarge (min-width: 120rem);
+@custom-media --xxLarge (min-width: 160rem);
+
 :root {
-  --pageMaxWidth: 1366px;
   --fontFamily: 'Equinor', sans-serif;
+  --page-paddingX: 5%;
+  --typeScale-base: max(1rem, calc(1rem + 0.3vw));
+  --spacing-base: 1rem;
+  --spacing-1: var(--spacing-base);
+  --spacing-2: calc(var(--spacing-base * 2));
+  --typeScale-multiplier: 1.25;
+  --typeScale-1: var(--typeScale-base);
+  --typeScale-2: calc(var(--typeScale-1) * var(--typeScale-multiplier));
+  --typeScale-3: calc(var(--typeScale-2) * var(--typeScale-multiplier));
+  --typeScale-4: calc(var(--typeScale-3) * var(--typeScale-multiplier));
+  --typeScale-0: calc(var(--typeScale-1) / var(--typeScale-multiplier));
+  --lineHeight-base: 1.5;
+  --mossGreen: #007079;
+  --darkGrey: #333;
+  --textColor: var(--darkGrey);
+  --linkColor: var(--mossGreen);
+}
+
+@media (--small) {
+  :root {
+    --page-paddingX: 10%;
+  }
+}
+
+@media (--medium) {
+  :root {
+    --typeScale-multiplier: 1.333;
+    --page-paddingX: 15%;
+    --lineHeight-base: 1.8;
+  }
+}
+
+@media (--large) {
+  :root {
+    --page-paddingX: 20%;
+  }
+}
+
+@media (--xLarge) {
+  :root {
+    --page-paddingX: 25%;
+  }
+}
+
+@media (--xxLarge) {
+  :root {
+    --page-paddingX: 30%;
+  }
 }

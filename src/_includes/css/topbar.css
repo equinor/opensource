@@ -1,10 +1,20 @@
-.topbar {
+body > header {
+  border-bottom: 1px solid #ccc;
+}
+
+body > footer {
+  border-top: 1px solid #ccc;
+}
+
+body > header,
+body > footer {
   background: #fff;
   min-height: 4rem;
   display: grid;
   align-items: center;
+  padding-left: min(5%, 3rem);
 
   & > * {
-    font-size: 1rem;
+    font-size: inherit;
   }
 }
