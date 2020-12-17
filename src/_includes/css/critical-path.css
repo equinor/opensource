@@ -68,15 +68,18 @@ body {
 }
 
 article {
-  max-width: var(--article-maxWidth);
+  /* max-width: var(--article-maxWidth); */
   margin-left: auto;
   margin-right: auto;
+  column-gap: calc(1em + 2%);
+  columns: 3 20em;
 }
 
 h1,
 h2 {
   color: var(--mist-blue-100);
   line-height: 1.2;
+  column-span: all;
 }
 
 h1 {
@@ -94,6 +97,7 @@ h1 + p,
 h1 + p + p {
   font-size: var(--typeScale-2);
   font-weight: 500;
+  column-span: all;
 }
 
 p + p {
