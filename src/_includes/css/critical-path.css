@@ -25,6 +25,33 @@
   --article-maxWidth: 40em;
 }
 
+@font-face {
+  font-family: Equinor;
+  src: url(https://eds-static.equinor.com/font/Equinor-Medium.woff2)
+    format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Equinor;
+  src: url(https://eds-static.equinor.com/font/Equinor-Regular.woff2)
+    format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Equinor;
+  src: url(https://eds-static.equinor.com/font/Equinor-Italic.woff2)
+    format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: block;
+}
+
 body {
   margin: 0;
   font: 400 1rem Equinor, sans-serif;
