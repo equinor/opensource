@@ -20,7 +20,7 @@
   --spacing-2: calc(var(--spacing-1) * 2);
   --spacing-3: calc(var(--spacing-1) * 3);
   --spacing-4: calc(var(--spacing-1) * 4);
-  --paddingY: 5%;
+  --paddingY: 7%;
   --paddingX: 10%;
   --article-maxWidth: 40em;
 }
@@ -89,8 +89,8 @@ h1 {
 
 h2 {
   font-size: var(--typeScale-3);
-  margin-top: 1em;
-  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 h1 + p,
@@ -98,11 +98,12 @@ h1 + p + p {
   font-size: var(--typeScale-2);
   font-weight: 500;
   column-span: all;
+  margin-top: 1.3em;
 }
 
 p + p {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 small {
