@@ -2,6 +2,7 @@
 
 :root {
   --slate-blue-shade-50: #121c23;
+  --slate-blue-shade-20: #1d2c38;
   --slate-blue-100: #243746;
   --slate-blue-50: #929ba3;
   --slate-blue-30: #bdc3c8;
@@ -27,12 +28,12 @@
 body {
   margin: 0;
   font: 400 1rem Equinor, sans-serif;
-  background-color: var(--slate-blue-100);
-
-  /* background-image: linear-gradient(
-    var(--slate-blue-100),
-    var(--slate-blue-darkened-50)
-  ); */
+  background-color: var(--slate-blue-shade-50);
+  background-image: linear-gradient(
+    var(--slate-blue-shade-50),
+    var(--slate-blue-shade-20)
+  );
+  background-attachment: fixed;
   color: var(--slate-blue-30);
   line-height: 1.5;
   font-size: var(--typeScale-1);
