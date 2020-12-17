@@ -1,0 +1,101 @@
+@import 'reset.css';
+
+:root {
+  --slate-blue-shade-50: #121c23;
+  --slate-blue-100: #243746;
+  --slate-blue-50: #929ba3;
+  --slate-blue-30: #bdc3c8;
+  --mist-blue-100: #d5eaf4;
+  --typeScale-base: max(1rem, calc(1rem + 0.3vw));
+  --typeScale-multiplier: 1.25;
+  --typeScale-1: var(--typeScale-base);
+  --typeScale-2: calc(var(--typeScale-1) * var(--typeScale-multiplier));
+  --typeScale-3: calc(var(--typeScale-2) * var(--typeScale-multiplier));
+  --typeScale-4: calc(var(--typeScale-3) * var(--typeScale-multiplier));
+  --typeScale-5: calc(var(--typeScale-4) * var(--typeScale-multiplier));
+  --typeScale-0: calc(var(--typeScale-1) / var(--typeScale-multiplier));
+  --spacing-base: var(--typeScale-base);
+  --spacing-1: calc(var(--spacing-base / 4));
+  --spacing-2: calc(var(--spacing-1) * 2);
+  --spacing-3: calc(var(--spacing-1) * 3);
+  --spacing-4: calc(var(--spacing-1) * 4);
+  --paddingY: 5%;
+  --paddingX: 10%;
+  --article-maxWidth: 40em;
+}
+
+body {
+  margin: 0;
+  font: 400 1rem Equinor, sans-serif;
+  background-color: var(--slate-blue-100);
+
+  /* background-image: linear-gradient(
+    var(--slate-blue-100),
+    var(--slate-blue-darkened-50)
+  ); */
+  color: var(--slate-blue-30);
+  line-height: 1.5;
+  font-size: var(--typeScale-1);
+  padding: var(--paddingY) var(--paddingX);
+}
+
+article {
+  max-width: var(--article-maxWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2 {
+  color: var(--mist-blue-100);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--typeScale-5);
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: var(--typeScale-3);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1 + p,
+h1 + p + p {
+  font-size: var(--typeScale-2);
+  font-weight: 500;
+}
+
+p + p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+small {
+  font-size: var(--typeScale-0);
+}
+
+a {
+  color: var(--mist-blue);
+}
+
+.author {
+  margin-top: 2em;
+}
+
+.markdown-header-anchor {
+  margin-left: -1.5rem;
+  padding-right: 0.5rem;
+  display: none;
+
+  h1:hover &,
+  h2:hover & {
+    display: inline-block;
+  }
+
+  svg {
+    fill: var(--mist-blue-100);
+  }
+}

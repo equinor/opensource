@@ -9,8 +9,8 @@ exports.data = () => {
 
   return {
     title: 'Open Source @ Equinor',
-    permalink: `${fileName}/index.html`,
-    layout: 'base.11ty.js',
+    permalink: `index.html`,
+    layout: 'standalone.liquid',
     md: fs.readFileSync(filePath, 'utf-8'),
   }
 }
