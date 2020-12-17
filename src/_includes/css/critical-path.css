@@ -7,7 +7,7 @@
   --slate-blue-50: #929ba3;
   --slate-blue-30: #bdc3c8;
   --mist-blue-100: #d5eaf4;
-  --typeScale-base: max(1rem, calc(1rem + 0.3vw));
+  --typeScale-base: calc(1rem + 0.3vw);
   --typeScale-multiplier: 1.25;
   --typeScale-1: var(--typeScale-base);
   --typeScale-2: calc(var(--typeScale-1) * var(--typeScale-multiplier));
