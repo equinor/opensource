@@ -151,5 +151,8 @@ a {
 
 .signature {
   margin-top: 1.5em;
-  text-align: right;
+
+  @media (min-width: 75rem) {
+    text-align: center;
+  }
 }
