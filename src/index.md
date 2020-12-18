@@ -3,6 +3,7 @@ layout: standalone
 title: Open Source @ Equinor
 author: Thorvald Johannessen
 jobtitle: Lead advisor open source
+email: opensource@equinor.com
 profile: https://www.linkedin.com/in/thorvald-johannessen-1313a41
 css: critical-path
 tags:
