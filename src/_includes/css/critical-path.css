@@ -108,7 +108,8 @@ h1 + p + p {
   margin-top: 1.3em;
 }
 
-p + p {
+p + p,
+li + li {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }

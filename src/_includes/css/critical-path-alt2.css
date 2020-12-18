@@ -108,6 +108,10 @@ p + p {
   margin-bottom: 1.5em;
 }
 
+ul {
+  margin-bottom: 1.5em;
+}
+
 small {
   font-size: var(--typeScale-0);
 }
