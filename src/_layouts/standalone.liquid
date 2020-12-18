@@ -40,8 +40,9 @@
       }
     </script>
     <style>
+      {% capture cssfile %}css/{{css}}.css{% endcapture %}
       {% postcss %}
-      {% include css/critical-path.css %}
+      {% include cssfile %}
       {% endpostcss %}
     </style>
     <script>

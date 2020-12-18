@@ -18,8 +18,7 @@ module.exports = (config) => {
   // Copy our static assets to the output folder
   config.addPassthroughCopy('src/manifest.json')
   config.addPassthroughCopy('src/assets/images')
-  config.addPassthroughCopy('src/*google*')
-  config.addPlugin(pluginPWA)
+  // config.addPlugin(pluginPWA)
 
   config.addFilter('md', (rawString) => markdownIt.render(rawString))
 
@@ -27,6 +26,10 @@ module.exports = (config) => {
 
   config.addShortcode('version', function () {
     return String(Date.now())
+  })
+
+  config.setLiquidOptions({
+    dynamicPartials: true,
   })
 
   config.addPairedShortcode('postcss', async (css) => {
