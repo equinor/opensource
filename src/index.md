@@ -17,7 +17,7 @@ description: |-
 ## Some alternate layouts:
 
 * [Break into multiple columns, column width at 20ems, font-size: 1rem + 0.3vw](/alt1)
-* [Break into multiple columns, column width at 21ems, font-size: 1rem + 0.4vw](/alt3)
+* [Break into multiple columns, column width at 22ems, font-size: 1rem + 0.4vw](/alt3)
 * [Center content when column reaches a max-width of 40ems](/alt2)
 
 The two first options use algorithmic layouts, only one breakpoint is used to center align the headings when there are multiple columns. The last one is more traditional (and boring :P) with a centered box when the text gets too wide to read.
