@@ -119,12 +119,15 @@ small {
 }
 
 a {
-  color: var(--mist-blue);
+  color: inherit;
   margin-top: 0;
-}
+  text-decoration: none;
+  border-bottom: max(1px, 0.07em) solid var(--slate-blue-70);
+  padding-bottom: 0.02em;
 
-.author {
-  margin-top: 2em;
+  &:hover {
+    border-bottom-color: inherit;
+  }
 }
 
 .markdown-header-anchor {
@@ -149,10 +152,10 @@ a {
   }
 }
 
-.signature {
-  margin-top: 1.5em;
-
-  @media (min-width: 75rem) {
-    text-align: center;
-  }
+footer {
+  margin: 5em 0 0;
+  padding-top: 1.5em;
+  font-size: var(--typeScale-0);
+  border-top: 2px dotted var(--slate-blue-80);
+  letter-spacing: 0.05em;
 }

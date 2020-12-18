@@ -60,8 +60,10 @@
     <article>
       {{ content | safe }}
     </article>
-    <p class="signature">
-      <a href="mailto:{{ email }}">{{ email }}</a>
-    </p>
+    <footer>
+      <p>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      </p>
+    </footer>
   </body>
 </html>

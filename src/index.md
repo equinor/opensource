@@ -69,6 +69,7 @@ tools and frameworks we use to build our own solutions.
 Through contributions to open source projects, our projects are enabled to take
 an active part in improving the products that _we_ depend on. We see this as a
 valuable mechanism in fulfilling our IT strategy.
+
 As we want to enable more collaboration in Equinor maintained projects, we also
 seek to increase our engagement in projects maintained by others.
 
