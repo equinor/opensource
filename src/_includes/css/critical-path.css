@@ -131,6 +131,7 @@ a {
 }
 
 .markdown-header-anchor {
+  border-bottom: none;
   margin-left: -1.5rem;
   padding-right: 0.5rem;
   opacity: 0;
