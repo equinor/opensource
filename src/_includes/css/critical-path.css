@@ -166,7 +166,8 @@ footer {
 }
 
 header {
-  padding: var(--spacing-2) var(--spacing-4);
+  padding: var(--spacing-1) var(--spacing-4);
+  font-size: var(--typeScale-0);
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
@@ -192,9 +193,11 @@ header li {
 .github-link {
   border-bottom: none;
   display: block;
+  width: calc(var(--typeScale-0) * 2);
+  height: calc(var(--typeScale-0) * 2);
 }
 
 .github-link svg {
-  height: calc(var(--typeScale-base) * 2);
   fill: currentColor;
+  width: 100%;
 }
