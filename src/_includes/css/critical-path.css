@@ -18,7 +18,7 @@
   --typeScale-5: calc(var(--typeScale-4) * var(--typeScale-multiplier));
   --typeScale-0: calc(var(--typeScale-1) / var(--typeScale-multiplier));
   --spacing-base: var(--typeScale-base);
-  --spacing-1: calc(var(--spacing-base / 4));
+  --spacing-1: calc(var(--spacing-base) / 2);
   --spacing-2: calc(var(--spacing-1) * 2);
   --spacing-3: calc(var(--spacing-1) * 3);
   --spacing-4: calc(var(--spacing-1) * 4);
@@ -67,6 +67,9 @@ body {
   color: var(--slate-blue-30);
   line-height: 1.5;
   font-size: var(--typeScale-1);
+}
+
+.content {
   padding: var(--paddingY) var(--paddingX);
 }
 
@@ -75,7 +78,7 @@ article {
   margin-right: auto;
   column-gap: calc(1.5em + 2%);
   columns: 3 20em;
-  column-rule: 2px dotted var(--slate-blue-80);
+  column-rule: 2px dotted var(--slate-blue-70);
 }
 
 h1,
@@ -124,6 +127,7 @@ a {
   text-decoration: none;
   border-bottom: max(1px, 0.07em) solid var(--slate-blue-70);
   padding-bottom: 0.02em;
+  transition: border-bottom-color 0.3s ease-out;
 
   &:hover {
     border-bottom-color: inherit;
@@ -159,4 +163,38 @@ footer {
   font-size: var(--typeScale-0);
   border-top: 2px dotted var(--slate-blue-80);
   letter-spacing: 0.05em;
+}
+
+header {
+  padding: var(--spacing-2) var(--spacing-4);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-bottom: 2px solid var(--slate-blue-100);
+}
+
+header li {
+  display: inline;
+  line-height: 1;
+  list-style-type: none;
+  margin-right: var(--spacing-2);
+
+  a {
+    display: inline-block;
+  }
+
+  a.current {
+    font-weight: 700;
+    border-bottom-color: inherit;
+  }
+}
+
+.github-link {
+  border-bottom: none;
+  display: block;
+}
+
+.github-link svg {
+  height: calc(var(--typeScale-base) * 2);
+  fill: currentColor;
 }
