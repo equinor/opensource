@@ -172,6 +172,9 @@ header {
   grid-template-columns: 1fr auto;
   align-items: center;
   border-bottom: 2px solid var(--slate-blue-100);
+  position: sticky;
+  top: 0;
+  background-color: var(--slate-blue-shade-50);
 }
 
 header li {
