@@ -8,8 +8,6 @@
     "debug": "DEBUG=Eleventy* npm run dev",
     "prebuild": "npm run clean",
     "build": "eleventy",
-    "build:css": "postcss src/styles/tailwind.css -o _tmp/styles.css",
-    "build:css:watch": "npm run build:css -- --watch",
     "docker:build": "docker build -t equinor/oss-web .",
     "docker:start": "docker run -p 8080:80 equinor/oss-web",
     "docker:inspect": "docker run -it equinor/oss-web /bin/sh"
@@ -17,7 +15,6 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@gerhobbelt/markdown-it-github-headings": "^2.0.0-1",
-    "@tailwindcss/typography": "^0.3.1",
     "autoprefixer": "^9.8.6",
     "eleventy-plugin-pwa": "^1.0.8",
     "js-yaml": "^3.14.1",
