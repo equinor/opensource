@@ -1,11 +1,19 @@
-# How we work
+# How we work - Open, Collaborative, Courageous, Caring
 
 In Equinor, [how we deliver is as important as what we
 deliver](https://www.equinor.com/en/careers/our-culture.html).
 
+As a values-based organization, our code of conduct for open source projects is
+simply a reflection of our values and how we live up to these as teams as well
+as individuals.
+
 This set the expectations for how we collaborate in our open source projects,
 and applies to all community members and participants in any Equinor maintained
 project.
+
+In addition to any definition or interpretation of the open source code of
+conduct, the company wide [Equinor code of conduct](https://www.equinor.com/content/dam/statoil/documents/ethics/equinor-code-of-conduct.pdf)
+always applies to all employees and hired contractors.
 
 ## Handling issues within the communities
 
