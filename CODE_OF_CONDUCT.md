@@ -33,7 +33,7 @@ For any problem not directly resolvable within the community, we encourage you
 to call out for assistance. Getting an outsiders perspective on the topic might
 be just what is needed for you to proceed.
 
-Send an e-mail to opensource_at_equinor.com and invite for a discussion. The
+Send an e-mail to [opensource@equinor.com](mailto:opensource@equinor.com) and invite for a discussion. The
 email will be handled by a team within the Equinor organization.
 
 Your request will be kept confidential from the team or community in question,
