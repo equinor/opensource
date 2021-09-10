@@ -5,6 +5,13 @@
     $ npm i
     $ npm run dev
 
+
+## Contribute
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/equinor/opensource)
+
+    
+
 ## Radix
 
 - The master branch is deployed automatically to [the dev environment][dev]
