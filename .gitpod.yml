@@ -18,3 +18,10 @@ vscode:
     - coenraads.bracket-pair-colorizer-2
     - dbaeumer.vscode-eslint
     - pflannery.vscode-versionlens
+
+gitConfig:
+  alias.co: checkout
+  alias.br: branch
+  alias.ci: commit
+  alias.st: status
+  pull.rebase: merges
