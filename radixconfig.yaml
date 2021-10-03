@@ -7,6 +7,7 @@ spec:
     - name: dev
       build:
         from: master
+    - name: test
     - name: prod
   components:
     - name: web
