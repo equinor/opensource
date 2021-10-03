@@ -9,7 +9,7 @@
     "prebuild": "npm run clean",
     "build": "eleventy",
     "docker:build": "docker build -t equinor/oss-web .",
-    "docker:start": "docker run -p 8080:80 equinor/oss-web",
+    "docker:start": "docker run -p 8080:8080 equinor/oss-web",
     "docker:inspect": "docker run -it equinor/oss-web /bin/sh"
   },
   "devDependencies": {

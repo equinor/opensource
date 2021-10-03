@@ -13,7 +13,7 @@ spec:
       publicPort: http
       ports:
         - name: http
-          port: 80
+          port: 8080
   dnsAppAlias:
     environment: prod
     component: web

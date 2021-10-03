@@ -11,7 +11,8 @@ RUN npm ci
 COPY . ./
 RUN npm run build
 
-FROM nginx:1.15.8-alpine
+FROM bitnami/nginx:latest
+
 WORKDIR /app
 COPY --from=builder /opt/app/dist /app
 COPY nginx.conf /etc/nginx/conf.d/default.conf
