@@ -13,7 +13,7 @@
     "docker:inspect": "docker run -it equinor/oss-web /bin/sh"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.1",
     "@gerhobbelt/markdown-it-github-headings": "^2.0.0-1",
     "autoprefixer": "^9.8.6",
     "eleventy-plugin-pwa": "^1.0.8",
