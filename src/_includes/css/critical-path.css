@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: Equinor;
-  src: url(https://eds-static.equinor.com/font/Equinor-Medium.woff2)
+  src: url(https://cdn.eds.equinor.com/font/Equinor-Medium.woff2)
     format('woff2');
   font-style: normal;
   font-weight: 500;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: Equinor;
-  src: url(https://eds-static.equinor.com/font/Equinor-Regular.woff2)
+  src: url(https://cdn.eds.equinor.com/font/Equinor-Regular.woff2)
     format('woff2');
   font-style: normal;
   font-weight: 400;
@@ -47,7 +47,7 @@
 
 @font-face {
   font-family: Equinor;
-  src: url(https://eds-static.equinor.com/font/Equinor-Italic.woff2)
+  src: url(https://cdn.eds.equinor.com/font/Equinor-Italic.woff2)
     format('woff2');
   font-style: italic;
   font-weight: 400;
