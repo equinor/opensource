@@ -5,7 +5,7 @@ module.exports = (data) => `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${data.site.name}</title>
     <link rel="manifest" href="/manifest.json" />
-    <link rel="stylesheet" href="https://eds-static.equinor.com/font/equinor-medium.css" />
+    <link rel="stylesheet" href="https://cdn.eds.equinor.com/font/equinor-medium.css" />
     <link rel="stylesheet" href="/css/styles.css">
   </head>
   <body>
