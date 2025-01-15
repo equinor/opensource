@@ -1,6 +1,0 @@
-.pad-x {
-  --padding: max(calc((100% - var(--pageMaxWidth)) / 2), 2rem);
-
-  padding-left: var(--padding);
-  padding-right: var(--padding);
-}
