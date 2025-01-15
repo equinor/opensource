@@ -2,36 +2,17 @@
   "name": "opensource.equinor.com",
   "version": "1.0.0",
   "scripts": {
-    "clean": "rimraf dist",
-    "predev": "npm run clean",
-    "dev": "eleventy --serve",
-    "debug": "DEBUG=Eleventy* npm run dev",
-    "prebuild": "npm run clean",
-    "build": "eleventy",
+    "lint": "stylelint \"www/**.html\"",
+    "dev": "browser-sync start --server \"www\" --files \"www/index.html\"",
     "docker:build": "docker build -t equinor/oss-web .",
     "docker:start": "docker run -p 8080:8080 equinor/oss-web",
     "docker:inspect": "docker run -it equinor/oss-web /bin/sh"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "@gerhobbelt/markdown-it-github-headings": "^2.0.0-1",
-    "autoprefixer": "^9.8.6",
-    "eleventy-plugin-pwa": "^1.0.8",
-    "js-yaml": "^3.14.1",
-    "markdown-it": "^10.0.0",
-    "markdown-it-abbr": "^1.0.4",
-    "object-path": ">=0.11.8",
-    "postcss": "^8.2.10",
-    "postcss-cli": "^8.3.0",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-import": "^13.0.0",
-    "postcss-nested": "^5.0.3",
+    "browser-sync": "^3.0.3",
     "prettier": "^2.1.1",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.2"
+    "stylelint": "^16.13.2",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^37.0.0"
   }
 }
