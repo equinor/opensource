@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <p>something wrong</p>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Source @ Equinor</title>
@@ -54,16 +53,8 @@
         box-sizing: inherit;
       }
 
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ol,
-      ul {
+      /* prettier-ignore */
+      body, h1, h2, h3, h4, h5, h6, p, ol, ul {
         margin: 0;
         padding: 0;
         font-weight: normal;
@@ -103,13 +94,12 @@
         --spacing-3: calc(var(--spacing-1) * 3);
         --spacing-4: calc(var(--spacing-1) * 4);
         --paddingY: 7%;
-        --paddingX: 15%;
         --paddingX: calc(10% + 5vw);
       }
 
       @font-face {
         font-family: Equinor;
-        src: url(https://cdn.eds.equinor.com/font/Equinor-Medium.woff2)
+        src: url('https://cdn.eds.equinor.com/font/Equinor-Medium.woff2')
           format('woff2');
         font-style: normal;
         font-weight: 500;
@@ -118,7 +108,7 @@
 
       @font-face {
         font-family: Equinor;
-        src: url(https://cdn.eds.equinor.com/font/Equinor-Regular.woff2)
+        src: url('https://cdn.eds.equinor.com/font/Equinor-Regular.woff2')
           format('woff2');
         font-style: normal;
         font-weight: 400;
@@ -127,7 +117,7 @@
 
       @font-face {
         font-family: Equinor;
-        src: url(https://cdn.eds.equinor.com/font/Equinor-Italic.woff2)
+        src: url('https://cdn.eds.equinor.com/font/Equinor-Italic.woff2')
           format('woff2');
         font-style: italic;
         font-weight: 400;
@@ -172,7 +162,7 @@
         column-span: all;
       }
 
-      @media (min-width: 75rem) {
+      @media (width >= 75rem) {
         h1,
         h2 {
           text-align: center;
@@ -190,6 +180,12 @@
         margin-bottom: 1em;
       }
 
+      p + p,
+      li + li {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+      }
+
       h1 + p,
       h1 + p + p {
         font-size: var(--typeScale-2);
@@ -199,27 +195,8 @@
         margin-top: 1.3em;
       }
 
-      p + p,
-      li + li {
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-      }
-
       small {
         font-size: var(--typeScale-0);
-      }
-
-      a {
-        color: inherit;
-        margin-top: 0;
-        text-decoration: none;
-        border-bottom: max(1px, 0.07em) solid var(--slate-blue-70);
-        padding-bottom: 0.02em;
-        transition: border-bottom-color 0.3s ease-out;
-      }
-
-      a:hover {
-        border-bottom-color: inherit;
       }
 
       .markdown-header-anchor {
@@ -272,8 +249,21 @@
         margin-right: var(--spacing-2);
       }
 
-      header li a {
-        display: inline-block;
+      a {
+        color: inherit;
+        margin-top: 0;
+        text-decoration: none;
+        border-bottom: max(1px, 0.07em) solid var(--slate-blue-70);
+        padding-bottom: 0.02em;
+        transition: border-bottom-color 0.3s ease-out;
+
+        header li & {
+          display: inline-block;
+        }
+
+        &:hover {
+          border-bottom-color: inherit;
+        }
       }
 
       header li a.current {
@@ -289,7 +279,7 @@
       }
 
       .github-link svg {
-        fill: currentColor;
+        fill: currentcolor;
         width: 100%;
       }
 
@@ -310,11 +300,11 @@
     <header>
       <a href="#content" class="skip-link">Skip to content</a>
       <nav>
-        <!--<ul>
+        <!-- <ul>
           <li><a href="#" class="current">Open Source @ Equinor</a></li>
           <li><a href="#">Some other link</a></li>
           <li><a href="#">Some third link</a></li>
-        </ul>-->
+        </ul> -->
       </nav>
       <a class="github-link" href="https://github.com/equinor">
         <svg viewbox="0 0 33 32">
