@@ -8,9 +8,12 @@
 
 ## Contribute
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/equinor/opensource)
+There’s a horisontal meny commented out in the html if needed at some point. The website used to be built with 11ty, but never got further than the one page, so that turned out to be a bit overkill. When 11ty released a new version with breaking changes it made more sense to remove 11ty. 
 
-    
+The CSS is inline, with a Stylelint config that works with that. 
+
+Codespaces recommended to avoid potential dev environment conflicts.
+
 
 ## Radix
 
