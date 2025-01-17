@@ -2,5 +2,8 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.validate": ["css", "html"]
+  "stylelint.validate": ["css", "html"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  }
 }

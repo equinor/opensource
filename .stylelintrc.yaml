@@ -1,6 +1,7 @@
 extends:
   - "stylelint-config-standard"
   - "stylelint-config-html"
+  - "stylelint-config-clean-order"
 rules:
   custom-property-pattern: 
     - "^([a-z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$"
