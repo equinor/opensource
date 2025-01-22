@@ -175,106 +175,6 @@
           --slateNeutral-10: #777b84;
           --slateNeutral-11: #b0b4ba;
           --slateNeutral-12: #edeef0;
-        }
-
-        @supports (color: color(display-p3 1 1 1)) {
-          @media (color-gamut: p3) {
-            :root {
-              /* LIGHT MODE */
-              --mossGreen-1: oklch(99.3% 0.0051 204.6deg);
-              --mossGreen-2: oklch(98.1% 0.0094 204.6deg);
-              --mossGreen-3: oklch(96% 0.026 204.6deg);
-              --mossGreen-4: oklch(93.4% 0.04 204.6deg);
-              --mossGreen-5: oklch(90.1% 0.0517 204.6deg);
-              --mossGreen-6: oklch(85.8% 0.0616 204.6deg);
-              --mossGreen-7: oklch(80.1% 0.0729 204.6deg);
-              --mossGreen-8: oklch(72.5% 0.092 204.6deg);
-              --mossGreen-9: oklch(49.7% 0.0849 204.6deg);
-              --mossGreen-10: oklch(44.7% 0.0849 204.6deg);
-              --mossGreen-11: oklch(51.7% 0.0849 204.6deg);
-              --mossGreen-12: oklch(35% 0.0448 204.6deg);
-
-              /* alpha */
-              --mossGreen-a1: color(display-p3 0.0196 0.8039 0.8039 / 2%);
-              --mossGreen-a2: color(display-p3 0.0196 0.6471 0.7333 / 4.4%);
-              --mossGreen-a3: color(display-p3 0.0039 0.6706 0.7804 / 10.6%);
-              --mossGreen-a4: color(display-p3 0.0039 0.6863 0.7765 / 17.3%);
-              --mossGreen-a5: color(display-p3 0.0039 0.6314 0.7137 / 24.4%);
-              --mossGreen-a6: color(display-p3 0.0039 0.5569 0.6431 / 31.8%);
-              --mossGreen-a7: color(display-p3 0.0039 0.5059 0.5804 / 42%);
-              --mossGreen-a8: color(display-p3 0 0.4824 0.5529 / 56.1%);
-              --mossGreen-a9: color(display-p3 0 0.302 0.3451 / 81.6%);
-              --mossGreen-a10: color(display-p3 0 0.2549 0.302 / 84.4%);
-              --mossGreen-a11: color(display-p3 0 0.3137 0.3569 / 79.3%);
-              --mossGreen-a12: color(display-p3 0 0.1294 0.1451 / 85.9%);
-
-              /* functional */
-              --mossGreen-contrast: #fff;
-              --mossGreen-surface: color(display-p3 0.9451 0.9765 0.9804 / 80%);
-              --mossGreen-indicator: oklch(49.7% 0.0849 204.6deg);
-              --mossGreen-track: oklch(49.7% 0.0849 204.6deg);
-
-              /* DARK MODE */
-              --slateBlue-1: oklch(17.8% 0.0123 243deg);
-              --slateBlue-2: oklch(21.3% 0.0141 243deg);
-              --slateBlue-3: oklch(26.1% 0.0249 243deg);
-              --slateBlue-4: oklch(30.1% 0.032 243deg);
-              --slateBlue-5: oklch(34% 0.0363 243deg);
-              --slateBlue-6: oklch(38.5% 0.0406 243deg);
-              --slateBlue-7: oklch(44.1% 0.046 243deg);
-              --slateBlue-8: oklch(52.2% 0.0542 243deg);
-              --slateBlue-9: oklch(69.2% 0.0492 243deg);
-              --slateBlue-10: oklch(65.5% 0.0492 243deg);
-              --slateBlue-11: oklch(78% 0.0454 243deg);
-              --slateBlue-12: oklch(94.2% 0.0232 243deg);
-
-              /* alpha */
-              --slateBlue-a1: color(display-p3 0 0.2471 0.9608 / 2.2%);
-              --slateBlue-a2: color(display-p3 0.3333 0.6667 1 / 5.9%);
-              --slateBlue-a3: color(display-p3 0.4078 0.7176 0.9961 / 12.7%);
-              --slateBlue-a4: color(display-p3 0.4588 0.7412 1 / 18.1%);
-              --slateBlue-a5: color(display-p3 0.502 0.7333 1 / 23.6%);
-              --slateBlue-a6: color(display-p3 0.5569 0.7725 1 / 29%);
-              --slateBlue-a7: color(display-p3 0.5922 0.7961 1 / 36.6%);
-              --slateBlue-a8: color(display-p3 0.6118 0.7961 1 / 48.8%);
-              --slateBlue-a9: color(display-p3 0.7373 0.8667 1 / 69.8%);
-              --slateBlue-a10: color(display-p3 0.7216 0.8588 1 / 64.8%);
-              --slateBlue-a11: color(display-p3 0.7843 0.8902 1 / 80.7%);
-              --slateBlue-a12: color(display-p3 0.9098 0.9569 1 / 97.5%);
-
-              /* functional */
-              --slateBlue-contrast: #fff;
-              --slateBlue-surface: color(display-p3 0.0941 0.1333 0.1725 / 50%);
-              --slateBlue-indicator: oklch(69.2% 0.0492 243deg);
-              --slateBlue-track: oklch(69.2% 0.0492 243deg);
-            }
-          }
-        }
-
-        :root {
-          /* Primitives */
-          --slate-blue-shade-50: #121c23;
-          --slate-blue-shade-20: #1d2c38;
-          --slate-blue-100: #243746;
-          --slate-blue-80: #41494f;
-          --slate-blue-70: #596065;
-          --slate-blue-50: #929ba3;
-          --slate-blue-30: #bdc3c8;
-          --mist-blue-100: #d5eaf4;
-
-          /* Semantic */
-          --page-fg: var(--slate-blue-30);
-          --page-bg: var(--slate-blue-shade-50);
-          --page-gradient-from: var(--page-bg);
-          --page-gradient-to: var(--slate-blue-shade-20);
-          --header-border: var(--slate-blue-100);
-          --header-bg: var(--slate-blue-shade-50);
-          --footer-border: var(--slate-blue-80);
-          --skip-link-bg: var(--slate-blue-shade-50);
-          --gh-logo: var(--mist-blue-100);
-          --heading-fg: var(--mist-blue-100);
-          --column-rule: var(--slate-blue-70);
-          --link: var(--slate-blue-70);
 
           /* Semantic */
 
@@ -367,6 +267,80 @@
           --spacing-4: calc(var(--spacing-1) * 4);
           --paddingY: 7%;
           --paddingX: calc(10% + 5vw);
+        }
+
+        @supports (color: color(display-p3 1 1 1)) {
+          @media (color-gamut: p3) {
+            :root {
+              /* LIGHT MODE */
+              --mossGreen-1: oklch(99.3% 0.0051 204.6deg);
+              --mossGreen-2: oklch(98.1% 0.0094 204.6deg);
+              --mossGreen-3: oklch(96% 0.026 204.6deg);
+              --mossGreen-4: oklch(93.4% 0.04 204.6deg);
+              --mossGreen-5: oklch(90.1% 0.0517 204.6deg);
+              --mossGreen-6: oklch(85.8% 0.0616 204.6deg);
+              --mossGreen-7: oklch(80.1% 0.0729 204.6deg);
+              --mossGreen-8: oklch(72.5% 0.092 204.6deg);
+              --mossGreen-9: oklch(49.7% 0.0849 204.6deg);
+              --mossGreen-10: oklch(44.7% 0.0849 204.6deg);
+              --mossGreen-11: oklch(51.7% 0.0849 204.6deg);
+              --mossGreen-12: oklch(35% 0.0448 204.6deg);
+
+              /* alpha */
+              --mossGreen-a1: color(display-p3 0.0196 0.8039 0.8039 / 2%);
+              --mossGreen-a2: color(display-p3 0.0196 0.6471 0.7333 / 4.4%);
+              --mossGreen-a3: color(display-p3 0.0039 0.6706 0.7804 / 10.6%);
+              --mossGreen-a4: color(display-p3 0.0039 0.6863 0.7765 / 17.3%);
+              --mossGreen-a5: color(display-p3 0.0039 0.6314 0.7137 / 24.4%);
+              --mossGreen-a6: color(display-p3 0.0039 0.5569 0.6431 / 31.8%);
+              --mossGreen-a7: color(display-p3 0.0039 0.5059 0.5804 / 42%);
+              --mossGreen-a8: color(display-p3 0 0.4824 0.5529 / 56.1%);
+              --mossGreen-a9: color(display-p3 0 0.302 0.3451 / 81.6%);
+              --mossGreen-a10: color(display-p3 0 0.2549 0.302 / 84.4%);
+              --mossGreen-a11: color(display-p3 0 0.3137 0.3569 / 79.3%);
+              --mossGreen-a12: color(display-p3 0 0.1294 0.1451 / 85.9%);
+
+              /* functional */
+              --mossGreen-contrast: #fff;
+              --mossGreen-surface: color(display-p3 0.9451 0.9765 0.9804 / 80%);
+              --mossGreen-indicator: oklch(49.7% 0.0849 204.6deg);
+              --mossGreen-track: oklch(49.7% 0.0849 204.6deg);
+
+              /* DARK MODE */
+              --slateBlue-1: oklch(17.8% 0.0123 243deg);
+              --slateBlue-2: oklch(21.3% 0.0141 243deg);
+              --slateBlue-3: oklch(26.1% 0.0249 243deg);
+              --slateBlue-4: oklch(30.1% 0.032 243deg);
+              --slateBlue-5: oklch(34% 0.0363 243deg);
+              --slateBlue-6: oklch(38.5% 0.0406 243deg);
+              --slateBlue-7: oklch(44.1% 0.046 243deg);
+              --slateBlue-8: oklch(52.2% 0.0542 243deg);
+              --slateBlue-9: oklch(69.2% 0.0492 243deg);
+              --slateBlue-10: oklch(65.5% 0.0492 243deg);
+              --slateBlue-11: oklch(78% 0.0454 243deg);
+              --slateBlue-12: oklch(94.2% 0.0232 243deg);
+
+              /* alpha */
+              --slateBlue-a1: color(display-p3 0 0.2471 0.9608 / 2.2%);
+              --slateBlue-a2: color(display-p3 0.3333 0.6667 1 / 5.9%);
+              --slateBlue-a3: color(display-p3 0.4078 0.7176 0.9961 / 12.7%);
+              --slateBlue-a4: color(display-p3 0.4588 0.7412 1 / 18.1%);
+              --slateBlue-a5: color(display-p3 0.502 0.7333 1 / 23.6%);
+              --slateBlue-a6: color(display-p3 0.5569 0.7725 1 / 29%);
+              --slateBlue-a7: color(display-p3 0.5922 0.7961 1 / 36.6%);
+              --slateBlue-a8: color(display-p3 0.6118 0.7961 1 / 48.8%);
+              --slateBlue-a9: color(display-p3 0.7373 0.8667 1 / 69.8%);
+              --slateBlue-a10: color(display-p3 0.7216 0.8588 1 / 64.8%);
+              --slateBlue-a11: color(display-p3 0.7843 0.8902 1 / 80.7%);
+              --slateBlue-a12: color(display-p3 0.9098 0.9569 1 / 97.5%);
+
+              /* functional */
+              --slateBlue-contrast: #fff;
+              --slateBlue-surface: color(display-p3 0.0941 0.1333 0.1725 / 50%);
+              --slateBlue-indicator: oklch(69.2% 0.0492 243deg);
+              --slateBlue-track: oklch(69.2% 0.0492 243deg);
+            }
+          }
         }
 
         @font-face {
