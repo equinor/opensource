@@ -409,8 +409,9 @@
 
           -moz-columns: var(--columns);
           columns: var(--columns);
-          -moz-column-rule: var(--column-rule);
-          column-rule: var(--column-rule);
+
+          /* -moz-column-rule: var(--column-rule);
+          column-rule: var(--column-rule); */
           -moz-column-gap: var(--gap);
           column-gap: var(--gap);
 
@@ -488,7 +489,8 @@
         footer {
           margin: 5em 0 0;
           padding-top: 1.5em;
-          border-top: 2px dotted var(--color-stroke-subtle);
+
+          /* border-top: 2px dotted var(--color-stroke-subtle); */
 
           font-size: var(--typeScale-0);
           letter-spacing: 0.05em;
@@ -580,12 +582,12 @@
           transform: translateY(0);
         }
 
-        @media (width >= 75rem) {
+        /* @media (width >= 75rem) {
           h1,
           h2 {
             text-align: center;
           }
-        }
+        } */
       }
     </style>
   </head>
