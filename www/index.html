@@ -52,8 +52,7 @@
         }
 
         *,
-        *::before,
-        *::after {
+        *:is(::before, ::after) {
           box-sizing: inherit;
         }
 
