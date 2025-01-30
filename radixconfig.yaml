@@ -7,10 +7,15 @@ spec:
     - name: dev
       build:
         from: master
-    - name: test
     - name: prod
   components:
     - name: web
+      resources:
+        requests:
+          memory: "24Mi"
+          cpu: "20m"
+        limits:
+          cpu: "50m"
       publicPort: http
       ports:
         - name: http
@@ -22,3 +27,4 @@ spec:
     - alias: opensource.equinor.com
       environment: prod
       component: web
+      useCertificateAutomation: true
